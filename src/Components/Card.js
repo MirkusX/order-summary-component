@@ -1,8 +1,13 @@
+import hero from "../Images/hero.svg";
+
 export const Card = () => {
   return (
     <section>
       <div>
-        <h1>Card</h1>
+        <div>
+          <img src={hero} />
+        </div>
+        <div></div>
       </div>
     </section>
   );
