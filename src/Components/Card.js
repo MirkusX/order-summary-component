@@ -1,5 +1,6 @@
 import hero from "../Images/hero.svg";
 import {
+  FlexDiv,
   IconBackgrond,
   NoteIcon,
   StyledDiv,
@@ -20,16 +21,18 @@ export const Card = () => {
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like
           </p>
-          <div>
-            <IconBackgrond>
-              <NoteIcon />
-            </IconBackgrond>
-            <div>
-              <p>Annual Plan</p>
-              <p>$59.99/year</p>
-            </div>
+          <FlexDiv>
+            <FlexDiv inner>
+              <IconBackgrond>
+                <NoteIcon />
+              </IconBackgrond>
+              <div>
+                <p>Annual Plan</p>
+                <p>$59.99/year</p>
+              </div>
+            </FlexDiv>
             <p>Change</p>
-          </div>
+          </FlexDiv>
         </div>
       </StyledDiv>
     </StyledSection>
