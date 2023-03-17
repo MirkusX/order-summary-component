@@ -70,4 +70,16 @@ export const StyledButton = styled.button`
   border-radius: 10px;
   color: white;
   font-weight: bold;
+  ${(props) => {
+    if (props.cancel)
+      return `
+    background-color: white;
+    color: gray;
+    margin: 1em 0 2em 0;
+    `;
+  }}
+`;
+
+export const ButtonDiv = styled.div`
+  margin-top: 1em;
 `;

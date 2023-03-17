@@ -1,5 +1,6 @@
 import hero from "../Images/hero.svg";
 import {
+  ButtonDiv,
   FlexDiv,
   IconBackgrond,
   NoMarginP,
@@ -7,7 +8,6 @@ import {
   StyledButton,
   StyledDiv,
   StyledImg,
-  StyledP,
   StyledSection,
 } from "./StyledComponents";
 
@@ -39,8 +39,10 @@ export const Card = () => {
             <p>Change</p>
           </FlexDiv>
         </div>
-        <StyledButton>Proceed to Payment</StyledButton>
-        <button>Cancel Order</button>
+        <ButtonDiv>
+          <StyledButton>Proceed to Payment</StyledButton>
+          <StyledButton cancel>Cancel Order</StyledButton>
+        </ButtonDiv>
       </StyledDiv>
     </StyledSection>
   );
