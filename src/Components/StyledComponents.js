@@ -34,10 +34,13 @@ export const FlexDiv = styled.div`
   align-items: center;
   margin: 0 auto;
   width: 70%;
+  justify-content: space-around;
   ${(props) => {
     if (props.inner)
       return `
     gap: 1em;
+    margin: 0;
+    justify-content: flex-start;
     `;
   }}
   ${(props) => {
@@ -57,8 +60,4 @@ export const NoMarginP = styled.p`
     margin-top: 0.25em;
     margin-bottom: 1em;`;
   }}
-`;
-
-export const StyledP = styled.p`
-  width: 70%;
 `;
