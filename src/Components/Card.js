@@ -4,6 +4,7 @@ import {
   IconBackgrond,
   NoMarginP,
   NoteIcon,
+  StyledButton,
   StyledDiv,
   StyledImg,
   StyledP,
@@ -38,6 +39,8 @@ export const Card = () => {
             <p>Change</p>
           </FlexDiv>
         </div>
+        <StyledButton>Proceed to Payment</StyledButton>
+        <button>Cancel Order</button>
       </StyledDiv>
     </StyledSection>
   );

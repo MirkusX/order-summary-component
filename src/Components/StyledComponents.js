@@ -61,3 +61,13 @@ export const NoMarginP = styled.p`
     margin-bottom: 1em;`;
   }}
 `;
+
+export const StyledButton = styled.button`
+  background-color: #766cf1;
+  border: none;
+  padding: 1em;
+  width: 80%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+`;
