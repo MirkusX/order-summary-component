@@ -2,9 +2,11 @@ import hero from "../Images/hero.svg";
 import {
   FlexDiv,
   IconBackgrond,
+  NoMarginP,
   NoteIcon,
   StyledDiv,
   StyledImg,
+  StyledP,
   StyledSection,
 } from "./StyledComponents";
 
@@ -16,19 +18,21 @@ export const Card = () => {
           <StyledImg src={hero} />
         </div>
         <div>
-          <h1>Order Summary</h1>
-          <p>
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like
-          </p>
+          <FlexDiv column>
+            <h1>Order Summary</h1>
+            <p>
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like
+            </p>
+          </FlexDiv>
           <FlexDiv>
             <FlexDiv inner>
               <IconBackgrond>
                 <NoteIcon />
               </IconBackgrond>
               <div>
-                <p>Annual Plan</p>
-                <p>$59.99/year</p>
+                <NoMarginP>Annual Plan</NoMarginP>
+                <NoMarginP top>$59.99/year</NoMarginP>
               </div>
             </FlexDiv>
             <p>Change</p>
