@@ -63,19 +63,26 @@ export const NoMarginP = styled.p`
 `;
 
 export const StyledButton = styled.button`
-  background-color: #766cf1;
+  background-color: #382ae1;
   border: none;
   padding: 1em;
   width: 80%;
   border-radius: 10px;
   color: white;
   font-weight: bold;
+  &:hover {
+    background-color: #766cf1;
+  }
   ${(props) => {
     if (props.cancel)
       return `
     background-color: white;
     color: gray;
     margin: 1em 0 2em 0;
+    &:hover{
+      background-color: white;
+      color: black;
+    }
     `;
   }}
 `;
