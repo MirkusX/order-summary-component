@@ -6,6 +6,7 @@ export const NoteIcon = styled(BsMusicNoteBeamed)`
   vertical-align: middle;
   width: 25px;
   height: 25px;
+  color: #7f869b;
 `;
 
 export const IconBackgrond = styled.div`
