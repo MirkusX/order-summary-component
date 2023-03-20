@@ -8,7 +8,9 @@ import {
   NoteIcon,
   StyledButton,
   StyledDiv,
+  StyledH1,
   StyledImg,
+  StyledP,
   StyledSection,
 } from "./StyledComponents";
 
@@ -21,11 +23,11 @@ export const Card = () => {
         </div>
         <div>
           <FlexDiv column>
-            <h1>Order Summary</h1>
-            <p>
+            <StyledH1>Order Summary</StyledH1>
+            <StyledP>
               You can now listen to millions of songs, audiobooks, and podcasts
               on any device anywhere you like
-            </p>
+            </StyledP>
           </FlexDiv>
           <FlexDiv>
             <FlexDiv inner>

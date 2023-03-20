@@ -42,7 +42,7 @@ export const StyledSection = styled.section`
 export const HoverP = styled.p`
   cursor: pointer;
   &:hover {
-    color: blue;
+    color: #837fcd;
   }
 `;
 
@@ -63,6 +63,7 @@ export const FlexDiv = styled.div`
     gap: 1em;
     margin: 0;
     justify-content: flex-start;
+    text-align: left;
     `;
   }}
   ${(props) => {
@@ -78,10 +79,16 @@ export const NoMarginP = styled.p`
   ${(props) => {
     if (props.top)
       return `
+      color: #7f869b;
       font-weight: normal;
     margin-top: 0.25em;
     margin-bottom: 1em;`;
   }}
+`;
+
+export const StyledH1 = styled.h1`
+  color: #203255;
+  margin-bottom: 0;
 `;
 
 export const StyledButton = styled.button`
@@ -114,4 +121,6 @@ export const ButtonDiv = styled.div`
   margin-top: 1em;
 `;
 
-export const StyledP = styled.p``;
+export const StyledP = styled.p`
+  color: #7f869b;
+`;
