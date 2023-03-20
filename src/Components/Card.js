@@ -2,6 +2,7 @@ import hero from "../Images/hero.svg";
 import {
   ButtonDiv,
   FlexDiv,
+  HoverP,
   IconBackgrond,
   NoMarginP,
   NoteIcon,
@@ -36,7 +37,7 @@ export const Card = () => {
                 <NoMarginP top>$59.99/year</NoMarginP>
               </div>
             </FlexDiv>
-            <p>Change</p>
+            <HoverP>Change</HoverP>
           </FlexDiv>
         </div>
         <ButtonDiv>

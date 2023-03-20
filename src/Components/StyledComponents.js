@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BsMusicNoteBeamed } from "react-icons/bs";
+import background from "../Images/background.svg";
 
 export const NoteIcon = styled(BsMusicNoteBeamed)`
   vertical-align: middle;
@@ -15,13 +16,34 @@ export const IconBackgrond = styled.div`
 
 export const StyledDiv = styled.div`
   width: 30%;
-  background-color: pink;
   border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.53);
+  @media (max-width: 811px) {
+    width: 90%;
+  }
 `;
 
 export const StyledSection = styled.section`
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(${background});
+  background-size: cover;
+  @media (max-width: 811px) {
+    align-items: flex-start;
+    padding-top: 1em;
+  }
+`;
+
+export const HoverP = styled.p`
+  cursor: pointer;
+  &:hover {
+    color: blue;
+  }
 `;
 
 export const StyledImg = styled.img`
@@ -63,6 +85,7 @@ export const NoMarginP = styled.p`
 `;
 
 export const StyledButton = styled.button`
+  cursor: pointer;
   background-color: #382ae1;
   border: none;
   padding: 1em;
@@ -90,3 +113,5 @@ export const StyledButton = styled.button`
 export const ButtonDiv = styled.div`
   margin-top: 1em;
 `;
+
+export const StyledP = styled.p``;
